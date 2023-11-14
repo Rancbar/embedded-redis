@@ -11,9 +11,19 @@ java.lang.RuntimeException: Can't start redis server. Check logs for details. Re
 
 It very seems also that this fork to fix your problem
 
+Fix old version seamlessly
+==============
+The following commands will replaces the old broken embedded-redis (read previous section) with this fixed one.
+
+*Please note that this approach just recommended for Apple users.*
+```shell
+git clone -b fix-for-prev-version https://github.com/Rancbar/embedded-redis.git
+cd embedded-redis
+mvn install
+```
 
 The Usage Document
-===============
+==============
 For using Redis embedded server in your Java integration testing follow the following steps
 
 Maven dependency
