@@ -15,7 +15,10 @@ Fix old version seamlessly
 ==============
 The following commands will replaces the old broken embedded-redis (read previous section) with this fixed one.
 
-*Please note that this approach just recommended for Apple users.*
+**Notice:** *Please note that this approach just recommended for Apple users.*
+
+**Notice:** *At the first place, please stop all the redis nodes and make sure no one is listening specifically on port 6379*
+
 ```shell
 git clone -b fix-for-prev-version https://github.com/Rancbar/embedded-redis.git
 cd embedded-redis
